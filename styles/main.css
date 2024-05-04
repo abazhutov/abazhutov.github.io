@@ -2,6 +2,10 @@
  * Globals
  */
 /* Links */
+:root {
+  --scale-proj: 0.1675;
+}
+
 a,
 a:focus,
 a:hover {
@@ -108,12 +112,50 @@ body {
   border-radius: 40px;
 }
 
-.cover-heading {
+.cover-heading, .project-heading {
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 2rem;
   margin-bottom: 5rem;
+}
+
+.project-heading {
+  font-weight: 30;
+  font-size: 0.7rem;
+  margin: 0.5rem;
+}
+
+.wrap-project { 
+  background-color: black;
+  width: 322px; 
+  height: 215px; 
+  padding: 0; 
+  overflow: hidden; 
+}
+
+.wrap-preview { 
+  position: relative;
+  width: 322px; 
+  height: 160px; 
+  padding: 0; 
+  background-color: black;
+  user-select: none
+  overflow: hidden; 
+}
+
+.prewiev-project {
+  width: 1920px; 
+  height: 960px; 
+  border: 1px solid black; 
+  -ms-zoom: var(--scale-proj);
+  -moz-transform: scale(var(--scale-proj));
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(var(--scale-proj));
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(var(--scale-proj));
+  -webkit-transform-origin: 0 0;
+  }
 }
 
 @media (min-width: 768px) {
