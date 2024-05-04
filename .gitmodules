@@ -1,0 +1,3 @@
+[submodule "projects/tetris-screen-generator"]
+	path = projects/tetris-screen-generator
+	url = https://github.com/abazhutov/tetris-screen-generator.github.io.git
